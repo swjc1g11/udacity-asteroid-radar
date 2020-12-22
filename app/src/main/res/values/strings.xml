@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Asteroid Radar</string>
+
+    <string name="next_week_asteroids">View asteroids for the next 7 days</string>
+    <string name="today_asteroids">View today\'s asteroids</string>
+    <string name="saved_asteroids">View saved asteroids</string>
+    <string name="close_approach_data_title">Close approach date</string>
+    <string name="absolute_magnitude_title">Absolute magnitude</string>
+    <string name="estimated_diameter_title">Estimated diameter</string>
+    <string name="relative_velocity_title">Relative velocity</string>
+    <string name="distance_from_earth_title">Distance from earth</string>
+    <string name="astronomical_unit_format">%f au</string>
+    <string name="km_unit_format">%f km</string>
+    <string name="km_s_unit_format">%f km/s</string>
+    <string name="image_of_the_day">Image of the Day</string>
+    <string name="astronomica_unit_explanation">The astronomical unit (au) is a unit of length, roughly the distance from Earth to the Sun and equal to about 150 million kilometres (93 million miles)</string>
+    <string name="astronomical_unit_explanation_button">Click here to reveal the definition of an astronimical unit in a dialog.</string>
+    <string name="potentially_hazardous_asteroid_image">An image of an asteroid covered in a re-entry fireball with an angry face superimposed that indicates that this asteroid could be hazardous.</string>
+    <string name="not_hazardous_asteroid_image">An image of an asteroid with a happy face superimposed that indicates that this asteroid does not pose a danger.</string>
+    <string name="this_is_nasa_s_picture_of_day_showing_nothing_yet">This is NASA\'s picture of day, showing nothing yet</string>
+    <string name="nasa_picture_of_day_content_description_format">NASA\'s picture of day: %s</string>
+    <string name="offline_message_try_again">Oops! You seem to be offline and we don\'t seem to have any asteroids saved! Try connecting to the internet and hitting retry.</string>
+    <string name="asteroid_list_item_content_description">An asteroid list item with the code name %1$s, an approach date of %2$s and a smiley face that indicates it\'s %3$b that this asteroid is hazardous.</string>
+</resources>
