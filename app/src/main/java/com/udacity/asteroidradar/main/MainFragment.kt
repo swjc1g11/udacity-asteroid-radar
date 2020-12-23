@@ -20,7 +20,7 @@ class MainFragment : Fragment() {
 
     private val viewModel: MainViewModel by lazy {
         val activity = requireNotNull(this.activity) {
-            "You can only access the viewModel after onViewCreated()"
+            "You can only access the viewModel after the activity or fragment has been created."
         }
         ViewModelProvider(this, MainViewModel.Factory(activity.application)).get(MainViewModel::class.java)
     }

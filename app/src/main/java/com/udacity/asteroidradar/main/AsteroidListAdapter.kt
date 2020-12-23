@@ -40,7 +40,7 @@ class AsteroidListAdapter(val asteroidClickListener: AsteroidListAsteroidClickLi
     }
 
     fun updateHeader(imageOfTheDay: ImageOfTheDay) {
-        if (!currentList.isEmpty()) {
+        if (currentList.isNotEmpty()) {
             val item = getItem(0)
             if (item is AsteroidListDataItem.ImageOfTheDayHeaderItem) {
                 item.imageOfTheDay = imageOfTheDay
@@ -85,6 +85,7 @@ class AsteroidListAdapter(val asteroidClickListener: AsteroidListAsteroidClickLi
 
         fun bind(item: ImageOfTheDay?) {
             binding.imageOfTheDay = item
+            binding.executePendingBindings()
         }
 
         companion object {

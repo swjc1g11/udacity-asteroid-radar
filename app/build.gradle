@@ -5,18 +5,6 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs'
 apply plugin: 'kotlin-android-extensions'
 
-//def getProps(String propName) {
-//    def propsFile = rootProject.file('local.properties')
-//    if (propsFile.exists()) {
-//        def props = new Properties()
-//        props.load(new FileInputStream(propsFile))
-//        return props[propName].toString()
-//    } else {
-//        return "";
-//    }
-//}
-
-
 android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
@@ -27,7 +15,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        // buildConfigField "String", "MARS_API_KEY", marsAPIKey
     }
     buildTypes {
         release {
