@@ -72,6 +72,7 @@ class NasaRespository(val database: AsteroidsDatabase) {
                 isConnectionError.postValue(false)
             } catch (e: Exception) {
                 isConnectionError.postValue(true)
+                Log.i(TAG, "Error: " + e.message)
             }
         }
     }
