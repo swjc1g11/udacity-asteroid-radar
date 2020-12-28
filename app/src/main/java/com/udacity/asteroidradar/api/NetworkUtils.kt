@@ -52,11 +52,10 @@ fun getNextSevenDaysFormattedDates(): ArrayList<String> {
         val currentTime = calendar.time
         // val dateFormat = SimpleDateFormat(Constants.API_QUERY_DATE_FORMAT, Locale.getDefault())
         formattedDateList.add(formatDateToApiQueryDateFormat(currentTime))
-        if (calendar.getActualMaximum(Calendar.DAY_OF_YEAR) == calendar.get(Calendar.DAY_OF_YEAR)) {
-            calendar.add(Calendar.YEAR, 1)
-        }
         calendar.add(Calendar.DAY_OF_YEAR, 1)
     }
+
+    Log.i("getNextSeven", formattedDateList.toString())
 
     return formattedDateList
 }
